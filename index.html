@@ -1451,6 +1451,53 @@
         
     </div>
     
+    <script>
+        // Deshabilitar el clic derecho
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+            alert('El clic derecho está deshabilitado.');
+        });
+
+        // Deshabilitar Ctrl+U (Ver código fuente)
+        document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey && event.key === 'u') {
+                event.preventDefault();
+                alert('Ver el código fuente está deshabilitado.');
+            }
+        });
+
+        // Deshabilitar Ctrl+Shift+I (Herramientas de desarrollador)
+        document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey && event.shiftKey && event.key === 'I') {
+                event.preventDefault();
+                alert('Las herramientas de desarrollador están deshabilitadas.');
+            }
+        });
+
+        // Deshabilitar Ctrl+Shift+C (Inspeccionar elemento)
+        document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey && event.shiftKey && event.key === 'C') {
+                event.preventDefault();
+                alert('Inspeccionar elemento está deshabilitado.');
+            }
+        });
+
+        // Deshabilitar Ctrl+Shift+J (Consola)
+        document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey && event.shiftKey && event.key === 'J') {
+                event.preventDefault();
+                alert('La consola está deshabilitada.');
+            }
+        });
+
+        // Deshabilitar F12 (Herramientas de desarrollador)
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'F12') {
+                event.preventDefault();
+                alert('Las herramientas de desarrollador están deshabilitadas.');
+            }
+        });
+    </script>
 </section>
 
 
