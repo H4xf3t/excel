@@ -1397,8 +1397,7 @@
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Eclex Studio">
-    <meta property="og:description" content="¿Cansado de perder tiempo configurando tu servidor de Minecraft? ¡Nosotros lo hacemos por ti!
-Con solo darnos acceso, te ofrecemos una experiencia de juego sin igual. Desde la instalación de plugins hasta la creación de lobbies únicos, ¡todo está cubierto!">
+    <meta property="og:description" content="En ECLEX STUDIO, transformamos ideas locas en realidades brillantes. Somos un equipo apasionado que trabaja en proyectos innovadores y emocionantes. ¡Únete a nosotros y descubre lo que podemos crear juntos!">
     <meta property="og:image" content="https://i.imgur.com/nWgGKja.png">
     <meta property="og:url" content="https://nexelinc.vercel.app">
     <meta property="og:type" content="website">
@@ -1406,8 +1405,7 @@ Con solo darnos acceso, te ofrecemos una experiencia de juego sin igual. Desde l
     <!-- Twitter Card (opcional para Twitter) -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Eclex Studio">
-    <meta name="twitter:description" content="¿Cansado de perder tiempo configurando tu servidor de Minecraft? ¡Nosotros lo hacemos por ti!
-Con solo darnos acceso, te ofrecemos una experiencia de juego sin igual. Desde la instalación de plugins hasta la creación de lobbies únicos, ¡todo está cubierto!">
+    <meta name="twitter:description" content="En ECLEX STUDIO, transformamos ideas locas en realidades brillantes. Somos un equipo apasionado que trabaja en proyectos innovadores y emocionantes. ¡Únete a nosotros y descubre lo que podemos crear juntos!">
     <meta name="twitter:image" content="https://i.imgur.com/nWgGKja.png">
     
 
@@ -1495,6 +1493,35 @@ Con solo darnos acceso, te ofrecemos una experiencia de juego sin igual. Desde l
     </div>
     
 </section>
+    <script>
+        // Desactivar el clic derecho
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+            alert("El clic derecho está deshabilitado en esta página.");
+        });
+
+        // Bloquear Ctrl+U, Ctrl+Shift+I y Ctrl+Shift+J
+        document.addEventListener('keydown', function (e) {
+            // Ctrl+U
+            if (e.ctrlKey && e.key === 'u') {
+                e.preventDefault();
+                alert("La función 'Ver código fuente' está deshabilitada.");
+            }
+
+            // Ctrl+Shift+I y Ctrl+Shift+J
+            if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) {
+                e.preventDefault();
+                alert("Las herramientas de desarrollador están deshabilitadas.");
+            }
+
+            // F12
+            if (e.key === 'F12') {
+                e.preventDefault();
+                alert("La tecla F12 está deshabilitada.");
+            }
+        });
+    </script>
+
 
 
   <script src="https://r.mobirisesite.com/929552/assets/web/assets/jquery/jquery.min.js?rnd=1732573863128"></script>
