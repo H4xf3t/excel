@@ -36,14 +36,7 @@
   document.body.classList.toggle('iframe', window !== window.parent);
 </script>
 
-  <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const branding = document.querySelector('[href^="https://elfsight.com/"]');
-    if (branding) {
-      branding.remove();
-    }
-  });
-</script>
+
 
 <style>
   [href^="https://elfsight.com/"] {
@@ -1541,6 +1534,14 @@
         });
     </script>
 
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const branding = document.querySelector('[href^="https://elfsight.com/"]');
+    if (branding) {
+      branding.remove();
+    }
+  });
+</script>
 
 
   <script src="https://r.mobirisesite.com/929552/assets/web/assets/jquery/jquery.min.js?rnd=1732573863128"></script>
