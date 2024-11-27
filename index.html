@@ -1507,6 +1507,35 @@
     
 </section>
 
+      <script>
+        // Desactivar el clic derecho
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+            alert("El clic derecho está deshabilitado en esta página.");
+        });
+
+        // Bloquear Ctrl+U, Ctrl+Shift+I y Ctrl+Shift+J
+        document.addEventListener('keydown', function (e) {
+            // Ctrl+U
+            if (e.ctrlKey && e.key === 'u') {
+                e.preventDefault();
+                alert("La función 'Ver código fuente' está deshabilitada.");
+            }
+
+            // Ctrl+Shift+I y Ctrl+Shift+J
+            if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) {
+                e.preventDefault();
+                alert("Las herramientas de desarrollador están deshabilitadas.");
+            }
+
+            // F12
+            if (e.key === 'F12') {
+                e.preventDefault();
+                alert("La tecla F12 está deshabilitada.");
+            }
+        });
+    </script>
+
 
 
 
