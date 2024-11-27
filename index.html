@@ -36,7 +36,14 @@
   document.body.classList.toggle('iframe', window !== window.parent);
 </script>
 
-
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const branding = document.querySelector('[href^="https://elfsight.com/"]');
+    if (branding) {
+      branding.remove();
+    }
+  });
+</script>
 
 <style>
   [href^="https://elfsight.com/"] {
